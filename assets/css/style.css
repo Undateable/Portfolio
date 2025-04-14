@@ -661,6 +661,8 @@ right: 10px;
     }
 }
 
+
+/*Image hovering*/
 .images-section img {
     cursor: pointer;
     transition: transform 0.2s;
