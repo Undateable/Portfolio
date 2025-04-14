@@ -1,0 +1,10 @@
+ - Agrandar cuadro de proyectos
+ - Corregir imagen debajo de "About me"
+ - Jere dice que la foto de mi cara quedaria mejor cuadrada ¿?
+ - Revisar responsive para 9:16
+ - Contact me.
+ - Agregar links a los proyectos, en los proyectos. 
+		https://jerestein-dev.itch.io/gaucho-runner
+		https://dannette.itch.io/the-nameless
+		https://dannette.itch.io/box-boy
+		https://dannette.itch.io/pawlings-inferno
