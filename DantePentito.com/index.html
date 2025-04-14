@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#home" class="logo">
+        <span><img src="./assets/img/logodp.png" alt=""></span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar" class="active">
+            <a href="#home">Home</a>
+            <a href="https://dannette.itch.io">Projects</a>
+            <a href="https://drive.google.com/file/d/1fg7bb0M45zv695UVJp11MiIL0T8YUGt3/view">Certificates</a>
+            <a href="https://drive.google.com/file/d/1tTxT6hwCTARD0ukYWnZO85zkxzGxi_PX/view">Curriculum</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, Its <span>Dante</span></h1>
+            <h3 class="text-animation">im a <span></span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias dignissimos blanditiis voluptates dolorum sequi sed ullam, dolor pariatur hic rerum voluptatem modi voluptas dicta esse quasi, minima explicabo nam?</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/dpentito/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/Undateable"><i class='bx bxl-github' ></i></a>
+                <a href="pentitodante2@gmail.com"><i class='bx bx-envelope'></i></a>
+                <a href="https://dannette.itch.io/"><i class='bx bx-home-smile' ></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="./assets/img/image.jpg" alt="">
+        </div>
+        
+    </section>
+
+    <section>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+            <div class="video-section">
+                <video controls>
+                <source src="/assets/img/vidgauchorunner.mp4" type="video/mp4" />
+                Tu navegador no soporta video.
+                </video>
+                <p>Lorem ipsum dolor, 
+                    sit amet consectetur adipisicing elit. Voluptatem ipsam iure voluptate voluptatibus ducimus quam assumenda minus neque aliquam incidunt, repellat consectetur soluta eius saepe consequuntur ab at dolor repudiandae?</p>
+            </div>
+            <div class="images-section">
+                <img src="./assets/img/gauchorunner1.png" alt="Imagen 1" />
+                <img src="./assets/img/gauchorunner2.png" alt="Imagen 2" />
+                <img src="./assets/img/gauchorunner3.png" />
+            </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="slide">
+            <div class="video-section">
+                <video controls>
+                <source src="/assets/img/The Nameless Gif.mp4" type="video/mp4" />
+                Tu navegador no soporta video.
+                </video>
+                <p>Lorem ipsum dolor,sit amet consectetur adipisicing elit. Voluptatem ipsam iure voluptate voluptatibus ducimus quam assumenda minus neque aliquam incidunt, repellat consectetur soluta eius saepe consequuntur ab at dolor repudiandae?
+                </p>
+            </div>
+            <div class="images-section">
+                <img src="./assets/img/nameles1.png" alt="Imagen 4" />
+                <img src="assets/img/nameles2.png" alt="Imagen 5" />
+                <img src="assets/img/nameles3.png" alt="imagen 6" />
+            </div>
+            </div>
+
+            <div class="slide">
+                <div class="video-section">
+                    <video controls>
+                    <source src="./assets/img/boxboy.mov" type="video/mp4" />
+                    Tu navegador no soporta video.
+                    </video>
+                    <p>Lorem ipsum dolor, 
+                        sit amet consectetur adipisicing elit. Voluptatem ipsam iure voluptate voluptatibus ducimus quam assumenda minus neque aliquam incidunt, repellat consectetur soluta eius saepe consequuntur ab at dolor repudiandae?</p>
+                </div>
+                <div class="images-section">
+                    <img src="assets/img/boxboy.png" alt="Imagen 4" />
+                    <img src="assets/img/boxboy1.png" alt="Imagen 5" />
+                    <img src="assets/img/boxboy3.png" alt="Imagen 6" />
+                </div>
+                </div>
+
+            <div class="slide">
+                <div class="video-section">
+                    <video controls>
+                    <source src="assets/img/transformicevdo.mkv" type="video/mp4" />
+                    Tu navegador no soporta video.
+                    </video>
+                    <p>Lorem ipsum dolor, 
+                        sit amet consectetur adipisicing elit. Voluptatem ipsam iure voluptate voluptatibus ducimus quam assumenda minus neque aliquam incidunt, repellat consectetur soluta eius saepe consequuntur ab at dolor repudiandae?</p>
+                </div>
+                <div class="images-section">
+                    <img src="assets/img/transformice1png.png" alt="Imagen 4" />
+                    <img src="assets/img/transformice2.png" alt="Imagen 5" />
+                    <img src="assets/img/transformice3.png" alt="Imagen 6" />
+                </div>
+                </div>
+    
+            <!-- Agregá más slides si lo necesitás -->
+        </div>
+    
+        <!-- Controles -->
+        <button class="nav prev" onclick="prevSlide()">❮</button>
+        <button class="nav next" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn" onclick="send">
+            </div>
+
+        </form>
+    </section> -->
+
+    <footer class="footer">
+        <ul class="list">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="https://dannette.itch.io">Projects</a>
+            </li>
+
+            <li>
+                <a href="https://drive.google.com/file/d/1fg7bb0M45zv695UVJp11MiIL0T8YUGt3/view">Certificates</a>
+            </li>
+
+            <li>
+                <a href="https://drive.google.com/file/d/1tTxT6hwCTARD0ukYWnZO85zkxzGxi_PX/view">Curriculum</a>
+            </li>
+
+        </ul>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/dpentito/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/Undateable"><i class='bx bxl-github' ></i></a>
+            <a href="pentitodante2@gmail.com"><i class='bx bx-envelope'></i></a>
+            <a href="https://dannette.itch.io/"><i class='bx bx-home-smile' ></i></a>
+        </div>
+
+        <!-- <p class="copyright">
+            © AquelMuchachitx | All Rights Reserved
+        </p>
+    </footer>-->
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/scriptarrow.js"></script>
+
+</body>
+</html>
+
