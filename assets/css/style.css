@@ -15,6 +15,11 @@
     --second-bg-color: #f3e4cb;
     --text-color: rgb(143,101,65);
     --main-color:#926844;
+    --carousel-speed: 15s;
+    --carousel-gap: 4rem;
+    --carousel-padding: 3.75rem;
+    --logo-width: 15rem;
+    --gradient-width: 15%;
 }
 
 html {
@@ -81,7 +86,7 @@ span img{
 }
 
 section {
-    min-height: 80vh;
+    min-height: 40vh;
     padding: 10rem 12% 10rem;
     background-image: url(../img/backgroundsection.png);
 }
@@ -436,6 +441,70 @@ right: 10px;
 .contact form .btn{
     margin-top: 2rem;
 }
+
+.carousel {
+position: relative;
+background-color: rgb(165, 4, 206);
+padding-block: var(--carousel-padding);
+display: flex;
+column-gap: var(--carousel-gap);
+overflow-x: hidden;
+box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
+
+    .logos {
+        display: flex;
+        column-gap: var(--carousel-gap);
+        animation: scroll var(--carousel-speed) linear infinite;
+        will-change: transform;
+
+        img {
+        width: var(--logo-width);
+        object-fit: contain;
+        transition: scale 0.5s;
+        user-select: none;
+
+        &:hover {
+            scale: 1.10;
+        }
+        }
+    }
+
+    &:hover .logos {
+        animation-play-state: paused;
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: var(--gradient-width);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    &::before {
+        left: 0;
+        background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    }
+
+    &::after {
+        right: 0;
+        background-image: linear-gradient(to left, rgb(0, 0, 0), transparent);
+    }
+}
+
+    @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - var(--carousel-gap)));
+    }
+}
+
 
 .footer{
     position: relative;
