@@ -450,8 +450,7 @@ display: flex;
 column-gap: var(--carousel-gap);
 overflow-x: hidden;
 box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
-
-    .logos {
+    .logos{
         display: flex;
         column-gap: var(--carousel-gap);
         animation: scroll var(--carousel-speed) linear infinite;
