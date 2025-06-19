@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+    font-family: "Limelight", sans-serif;
 }
 
 :root {
     --bg-color: #f3e4cb;
     --second-bg-color: #f3e4cb;
-    --text-color: rgb(143,101,65);
-    --main-color:#926844;
+    --text-color: #754a25;
+    --main-color:#f3e3cb;
     --carousel-speed: 15s;
     --carousel-gap: 4rem;
     --carousel-padding: 3.75rem;
@@ -25,6 +25,8 @@
 html {
     font-size: 50%;
     overflow-x: hidden;
+    background-image: url(../img/backgroundaboutme.png);
+    background-size: cover;
 }
 
 .header {
@@ -33,7 +35,7 @@ html {
     left: 0;
     width: 100%;
     padding: 4rem 11% 1rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: #8a603bbb;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -65,8 +67,8 @@ span img{
 }
 
 .navbar a {
-    font-size: 1.8rem;
-    color: #231710;
+    font-size: 2.3rem;
+    color: #000000;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -86,17 +88,17 @@ span img{
 }
 
 section {
-    min-height: 40vh;
+    margin-top: 225px;
+    margin-bottom: 225px;
     padding: 10rem 12% 10rem;
-    background-image: url(../img/backgroundsection.png);
 }
 
 .home {
-    background-image:url(../img/backgroundaboutme.png);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15rem;
+    background-color:#8a603bbb;
 }
 
 
@@ -109,9 +111,6 @@ section {
     margin-top: 3rem;
 }
 
-span {
-    color: var(--main-color);
-}
 
 .home-content h3 {
     margin-bottom: 2rem;
@@ -151,7 +150,7 @@ span {
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
-    color: rgb(83, 57, 0);
+    color: whitesmoke;
 }
 
 .social-icons a {
@@ -227,13 +226,12 @@ span {
 
 .text-animation span::before{
     content: "Web Developer";
-    color: var(--main-color);
     animation: words 20s infinite;
 }
 
 .text-animation span::after{
     content: "";
-    background-color: var(--bg-color);
+    background-color: transparent;
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -337,8 +335,9 @@ font-size: 25px;
 }
 
 .video-section video {
-width: 100%;
-border-radius: 15px;
+    width: 103%;
+    border-radius: 15px;
+    margin-bottom: 152px;
 }
 
 .video-section p{
@@ -346,10 +345,10 @@ margin-top: 40px;
 }
 
 .images-section {
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .images-section img {
@@ -360,26 +359,35 @@ object-fit: cover;
 }
 
 .nav {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background-color: rgb(243,227,203);
-color: rgb(0, 0, 0);
-border: none;
-font-size: 24px;
-padding: 10px;
-cursor: pointer;
-border-radius: 50%;
-z-index: 10;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #754a25;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.nav:hover {
+    background-color: rgba(142, 19, 214, 0.8);
+    transform: translateY(-50%) scale(1.1);
 }
 
 .prev {
-left: 10px;
-
+    left: 20px;
 }
 
 .next {
-right: 10px;
+    right: 20px;
 }
 
 .heading{
@@ -444,7 +452,6 @@ right: 10px;
 
 .carousel {
 position: relative;
-background-color: rgb(165, 4, 206);
 padding-block: var(--carousel-padding);
 display: flex;
 column-gap: var(--carousel-gap);
@@ -510,7 +517,7 @@ box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background-color: #8a603bbb;
 }
 
 .footer .social{
@@ -551,7 +558,7 @@ box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
 }
 
 .footer ul li a{
-    color:#231710;
+    color:#ffffff;
     border-bottom: 3px solid transparent;
     transition: 0.3 ease-in-out;
 }
@@ -567,8 +574,8 @@ box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
 .footer .copyright{
     margin-top: 50px;
     text-align: center;
-    font-size: 16px;
-    color: white;
+    font-size: 15px;
+    color: rgb(29, 8, 71);
 }
 
 @media(max-width:1285px){
