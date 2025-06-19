@@ -1,10 +1,11 @@
- - Agrandar cuadro de proyectos
- - Corregir imagen debajo de "About me"
- - Jere dice que la foto de mi cara quedaria mejor cuadrada ¿?
- - Revisar responsive para 9:16 ( resolucion? )
- - Contact me.
- - Agregar links a los proyectos, en los proyectos. 
-		https://jerestein-dev.itch.io/gaucho-runner
-		https://dannette.itch.io/the-nameless
-		https://dannette.itch.io/box-boy
-		https://dannette.itch.io/pawlings-inferno
+ * Acomodar responsive portfolio 
+	1- Desktop
+	2- Tipos de celulares
+	3- Tablet
+	4- Notebook
+
+*Creacion de paginas por cada proyecto a mostrar (el dia de mañana se usa de base)
+	1- Gaucho runner
+	2- BoxBoy
+	3- Nameless
+	4- Pawling's Inferno

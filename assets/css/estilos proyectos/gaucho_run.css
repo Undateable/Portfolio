@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Limelight", sans-serif;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(0, 0, 0);
+	color: bisque;
+	justify-content: space-evenly;
+	align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main video{
+    width: 50%;
+}
+
+.images-section{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 50%;
+}
